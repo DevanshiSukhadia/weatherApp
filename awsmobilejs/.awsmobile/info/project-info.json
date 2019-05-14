@@ -1,0 +1,19 @@
+{
+	"ProjectName": "weatherApp",
+	"ProjectPath": "/Users/devanshia/weatherApp",
+	"InitializationTime": "2019-05-13-21-52-58",
+	"LastConfigurationTime": "2019-05-13-21-52-30",
+	"LastNPMInstallTime": "",
+	"FrontendLastBuildTime": "",
+	"LastPublishTime": "",
+	"BackendLastSyncTime": "2019-05-13-21-57-21",
+	"BackendLastBuildTime": "2019-05-13-21-56-58",
+	"BackendLastPushTime": "2019-05-13-21-57-16",
+	"BackendProjectID": "1b2085a1-520b-4f41-9094-5c6c67f670ff",
+	"BackendProjectName": "weatherApp",
+	"BackendProjectConsoleUrl": "https://console.aws.amazon.com/mobilehub/home#/1b2085a1-520b-4f41-9094-5c6c67f670ff/build",
+	"BackendProjectCreationTime": "2019-05-14T04:52:33.608Z",
+	"BackendProjectLastUpdatedTime": "2019-05-14T04:57:16.289Z",
+	"Framework": "react-native",
+	"BackendLastSyncToDevTime": "2019-05-13-21-57-21"
+}

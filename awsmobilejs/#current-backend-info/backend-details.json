@@ -1,0 +1,165 @@
+{
+	"name": "weatherApp",
+	"projectId": "1b2085a1-520b-4f41-9094-5c6c67f670ff",
+	"region": "us-east-1",
+	"state": "NORMAL",
+	"createdDate": "2019-05-14T04:52:33.608Z",
+	"lastUpdatedDate": "2019-05-14T04:57:16.289Z",
+	"consoleUrl": "https://console.aws.amazon.com/mobilehub/home#/1b2085a1-520b-4f41-9094-5c6c67f670ff/build",
+	"resources": [
+		{
+			"type": "AWS::Pinpoint::AnalyticsApplication",
+			"name": "weatherapp_MobileHub",
+			"arn": "ebcb8360b10f4b479dac9503dfc4c47d",
+			"feature": "analytics",
+			"attributes": {
+				"lastUpdateRequestID": "fa150938-c53c-4020-8c23-b14255185515"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "weatherapp_mobileanalytics_MOBILEHUB_1356404945",
+			"arn": null,
+			"feature": "analytics",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc",
+				"role": "weatherapp_auth_MOBILEHUB_1356404945"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "weatherapp_mobileanalytics_MOBILEHUB_1356404945",
+			"arn": null,
+			"feature": "analytics",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc",
+				"role": "weatherapp_unauth_MOBILEHUB_1356404945"
+			}
+		},
+		{
+			"type": "AWS::Cognito::IdentityPool",
+			"name": "weatherapp_MOBILEHUB_1356404945",
+			"arn": "us-east-1:8920198f-1aeb-42db-8608-c0324fb8d4e4",
+			"feature": "user-signin",
+			"attributes": {
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc",
+				"poolid": "us-east-1:8920198f-1aeb-42db-8608-c0324fb8d4e4",
+				"roleARNs": "arn:aws:iam::981019896692:role/weatherapp_auth_MOBILEHUB_1356404945,arn:aws:iam::981019896692:role/weatherapp_unauth_MOBILEHUB_1356404945"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "weatherapp_smsverification_MOBILEHUB_1356404945",
+			"arn": "arn:aws:iam::981019896692:role/service-role/weatherapp_smsverification_MOBILEHUB_1356404945",
+			"feature": "user-signin",
+			"attributes": {
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc",
+				"user-pools-role-key": "user-pools-execution-role"
+			}
+		},
+		{
+			"type": "AWS::Cognito::UserPool",
+			"name": "weatherapp_userpool_MOBILEHUB_1356404945",
+			"arn": "us-east-1_fTaEHBLSG",
+			"feature": "user-signin",
+			"attributes": {
+				"alias-attributes": "[\"email\",\"phone_number\"]",
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc",
+				"mfa-configuration": "ON",
+				"password-policy": "{\"minimumLength\":8,\"requireUppercase\":true,\"requireLowercase\":true,\"requireNumbers\":true,\"requireSymbols\":true}",
+				"region": "us-east-1",
+				"user-pools-client-id": "...redacted_359538657...",
+				"user-pools-client-secret": "...redacted_1337280237...",
+				"user-pools-id": "us-east-1_fTaEHBLSG",
+				"user-pools-web-client-id": "56nb197vnncu0edur7fjd9ptqs"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "weatherapp_auth_MOBILEHUB_1356404945",
+			"arn": "arn:aws:iam::981019896692:role/weatherapp_auth_MOBILEHUB_1356404945",
+			"feature": "user-signin",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "weatherapp_unauth_MOBILEHUB_1356404945",
+			"arn": "arn:aws:iam::981019896692:role/weatherapp_unauth_MOBILEHUB_1356404945",
+			"feature": "user-signin",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "fa150938-c53c-4020-8c23-b14255185515"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "weatherapp-hosting-mobilehub-1356404945",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"lastUpdateRequestID": "fa150938-c53c-4020-8c23-b14255185515",
+				"region": "us-east-1",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/weatherapp-hosting-mobilehub-1356404945",
+				"s3-bucket-website-url": "https://s3.amazonaws.com/weatherapp-hosting-mobilehub-1356404945"
+			}
+		},
+		{
+			"type": "AWS::CloudFront::Distribution",
+			"name": "d3d9lnfawvl1pd.cloudfront.net",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"id": "E442DQFTLS66Z",
+				"lastUpdateRequestID": "fa150938-c53c-4020-8c23-b14255185515"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "weatherapp_hosting_MOBILEHUB_1356404945",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc",
+				"role": "weatherapp_auth_MOBILEHUB_1356404945"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "weatherapp_hosting_MOBILEHUB_1356404945",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "cf5adf8d-3153-492a-88fd-aaf259a6b7bc",
+				"role": "weatherapp_unauth_MOBILEHUB_1356404945"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "weatherapp-deployments-mobilehub-1356404945",
+			"arn": null,
+			"feature": "common",
+			"attributes": {
+				"region": "us-east-1",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/weatherapp-deployments-mobilehub-1356404945"
+			}
+		},
+		{
+			"type": "AWS::CloudFormation::Stack",
+			"name": "Development",
+			"arn": null,
+			"feature": "cloud-api",
+			"attributes": {
+				"primary": "true",
+				"region": "us-east-1",
+				"stateSummary": "NOT_YET_DEPLOYED"
+			}
+		}
+	]
+}
